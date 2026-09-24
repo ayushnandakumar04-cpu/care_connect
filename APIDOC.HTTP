@@ -1,0 +1,51 @@
+# Api call for list
+###
+
+GET http://127.0.0.1:8000/doctor/
+Accept: application/json
+
+#Api call for adding
+###
+
+POST  http://127.0.0.1:8000/doctor/
+Content-Type: application/json
+
+{
+              "name":"Arnold",
+              "specialization":"Hematology",
+              "fee":6000,
+              "qualification":"MBBS",
+              "email":"arnold@gmail.com"
+}
+    
+
+#Api call for retrieving
+###
+
+GET http://127.0.0.1:8000/doctor/3/
+Accept: application/json
+
+#Api call for deleting
+###
+
+DELETE http://127.0.0.1:8000/doctor/1/
+Content-Type: application/json
+
+{
+    "id":1
+}
+
+#api call for update
+###
+
+PUT  http://127.0.0.1:8000/doctor/2/
+Content-Type: application/json
+
+{            "id":2,
+             "name":"Aswin",
+              "specialization":"Pulmonology",
+              "fee":1500,
+              "qualification":"MBBS",
+              "email":"aswin@gmail.com"
+           
+}
