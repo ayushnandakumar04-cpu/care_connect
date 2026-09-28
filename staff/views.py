@@ -53,3 +53,6 @@ class DoctorListRetrieveView(APIView):
                 "Message": "Movie updated successfully"
             }
         return Response(data=response_data)
+
+
+    

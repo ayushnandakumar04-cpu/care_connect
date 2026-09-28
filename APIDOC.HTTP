@@ -49,3 +49,22 @@ Content-Type: application/json
               "email":"aswin@gmail.com"
            
 }
+#
+###
+
+GET  http://127.0.0.1:8000/v2/doctors
+Accept:  application/json
+
+#
+###
+
+POST http://127.0.0.1:8000/v2/doctors
+Content-Type: application/json
+
+{
+    "name":"jason",
+    "specialization":"Derma",
+    "fee":450,
+    "qualification":"MBBS",
+    "email":"jason@gmail.com"
+}

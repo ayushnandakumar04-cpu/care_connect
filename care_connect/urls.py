@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from staff.views import DoctorListCreateView,DoctorListRetrieveView
+from staff_v2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('doctor/',DoctorListCreateView.as_view()),
-    path('doctor/<int:pk>/',DoctorListRetrieveView.as_view())
+    path('doctor/<int:pk>/',DoctorListRetrieveView.as_view()),
+    path('v2/doctors',DoctorListCreateView.as_view()),
+    path('v2/doctors/<int:pk>',DoctorListRetrieveView.as_view())
 ]
