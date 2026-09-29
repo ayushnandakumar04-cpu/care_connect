@@ -52,13 +52,13 @@ Content-Type: application/json
 #
 ###
 
-GET  http://127.0.0.1:8000/v2/doctors
-Accept:  application/json
+GET http://127.0.0.1:8000/v2/doctors/2/
+Accept: application/json
 
 #
 ###
 
-POST http://127.0.0.1:8000/v2/doctors
+POST http://127.0.0.1:8000/v2/doctors/2
 Content-Type: application/json
 
 {
@@ -67,4 +67,37 @@ Content-Type: application/json
     "fee":450,
     "qualification":"MBBS",
     "email":"jason@gmail.com"
+}
+
+#
+###
+
+GET http://127.0.0.1:8000/v2/doctors/2/
+Accept: application/json
+
+#
+###
+
+PUT http://127.0.0.1:8000/v2/doctors/2/
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Ayush",
+    "specialization":"cardiology",
+    "fee": 600,
+    "qualification":"MBBS",
+    "email":"ayush@gmail.com"
+}
+
+#
+###
+
+POST http://127.0.0.1:8000/v2/admin/register/
+Content-Type: application/json
+
+{
+    "username":"Ay123",
+    "password":"Ayush@123",
+       "email":"ayush@gmail.com"
 }
