@@ -101,3 +101,10 @@ Content-Type: application/json
     "password":"Ayush@123",
        "email":"ayush@gmail.com"
 }
+
+
+#api call for list
+###
+
+GET http://127.0.0.1:8000/appointment/
+Accept: application/json
